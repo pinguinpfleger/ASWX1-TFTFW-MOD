@@ -1,0 +1,278 @@
+﻿#######################################################################
+# Target Machine:artillery3d Sidewinder X1 (tested with September 2019 model)
+# basefiles downloaded from: http://artillery3d.com/en/Content/490193.html
+# modified by: rob3dprint@gmail.com
+# modified: Dec/2019
+# remixed by: FoodFighter (https://www.thingiverse.com/FoodFighter)
+# remixed: Feb/2020
+# --------------------- Disclaimer -------------------------------
+# Use at your own risk!
+# There are inherent dangers of upgrading your firmware and config files. We caution you to make sure that you completely understand the potential risks before applying/uploading any of the software to your 3d-Printer
+# This Software and Config Files  are provided "as is" without warranty of any kind, either express or implied.
+# All information is provided “as is”, with NO guarantees. There is NO warranty that:
+# - the software and config file  will be uninterrupted, timely, secure or error-free
+# - the software and config file will meet your requirements
+# - the results that may be obtained from the use of the software and config file will be effective, accurate or reliable
+# - the quality of the software and config files will meet your expectations
+# - any errors in the software and config files obtained will be corrected.
+#--------------------------------------------------------------------
+
+
+### robrob: TIP ###
+# For upgrading your MKS_TFT copy the following folders/files to the tft card: mks_font, mks_pic, mks_config, mkstft28. Reboot printer with SDCard inserted
+# For some of the features, like e.g. LiveAdjustZ and PID Tuning to work you also have to flash the modified Marlin Firmware bundled with this release.
+#
+# if you have only modified this file (mks_config.txt), e.g. with your own preheat temps,  you can upload it standalone to your SDCard and boot from it. That's faster.
+
+
+
+#########  Printer type setting  ##################################
+
+#mainboard firmware setting(marlin:1; repetier:2; smoothie:3)
+>cfg_firmware_type:1
+
+#machine setting (Normal:1; Delta:2)
+>cfg_machine_type:1
+
+#baud rate (9600:1; 57600:2; 115200:3; 250000:4)
+>cfg_baud_rate:4
+
+#multi-language(enable:1, disable:0)
+>cfg_multiple_language:0
+
+#languages setting
+#(simplified Chinese:1; traditional Chinese:2; English:3; Russian:4; Spanish:5). This configuration is valid when "cfg_multiple_language" is disabled.
+>cfg_language_type:3
+
+#extruder number(one:1; dual:2)
+>cfg_sprayer_counter:1
+
+#enable heated bed(yes:1; no: 0)
+>cfg_custom_bed_flag:1
+
+#the max target temp of extruder and heated bed
+>cfg_max_sprayer_temperature:270
+>cfg_max_hotbed_temperature:150
+
+#pause position (-1 is invalid; Z-axis is relative position)
+>cfg_XPOS:-1
+>cfg_YPOS:-1
+>cfg_ZADD:10
+
+#-----------------------------------------------------------------------
+#########  Advanced Function Option  ##################################
+
+#enable UPS?(yes:1; no:0)
+>cfg_have_ups_device:0
+
+#enable power detecting module(mks 220det:1; mks pwc:0)
+>cfg_insert_det_module:0
+
+#enable auto off after print finish function (no:0; Yes:1）
+>cfg_print_finish_close_Machine:0
+
+#set PB0 signal when use it for sencond nozzle (high level:1; low level:0)
+>cfg_PB0_trigger_Level:0
+
+#set PB1 signal (high level:1; low level:0)
+>cfg_PB1_trigger_Level:0
+
+#set error range of Z-axis on breakpoints recovery
+>cfg_breakpoint_z_error:0.2
+
+#---------------------------------------------------------------------------
+
+#########  Filament Change Function  ##############################
+
+#the speed to extrude filament(mm/min)
+>cfg_filament_load_speed:400
+#the lenght to extrude filament (mm)
+>cfg_filament_load_length:100
+
+#the speed to retract filament(mm/min)
+>cfg_filament_unload_speed:2000
+#the lenght to retract filament(mm)
+>cfg_filament_unload_length:100
+
+#It is the minimum temperature for filament change.
+It will auto heat up if the current temp doesn't reach the target.
+>cfg_filament_load_limit_temperature:200
+
+#The length of Load filament before unloader filament.
+>cfg_unload_retract_length:5
+
+#The speed of load filament  before unloader filament.
+>cfg_unload_retract_speed:500
+
+#---------------------------------------------------------------------------
+
+############  Leveling Function  ########################################
+
+#leveling mode(manual:0; auto:1; conceal leveling button:2)
+>cfg_leveling_mode:0
+
+#the command of auto leveling (G29 is available for Marlin.While G32 is for  Repetier and Smoothieware)
+>cfg_auto_leveling_cmd:G28;G29;
+
+#the point number of manual leveling:(3,4,5 point available)
+>cfg_point_number:5
+
+#the coordinates of 5 point on manual leveling
+>cfg_point1:50,50
+>cfg_point2:250,50
+>cfg_point3:250,250
+>cfg_point4:50,250
+>cfg_point5:150,150
+
+#the travel speed of leveling(mm/min)
+>cfg_leveling_z_speed:1500
+>cfg_leveling_xy_speed:8000
+
+#---------------------------------------------------------------------------
+
+#############  WIFI Function  ##########################################
+
+#wifi model(MKS WIFI TFT:0;  MKS HLK-WIFI:1)
+>cfg_wifi_type:0
+
+#wifi mode(0:sta;1:ap)
+>cfg_wifi_mode:1
+
+#wifi name and password
+>cfg_wifi_ap_name:Artillery
+>cfg_wifi_key_code:12345678
+
+#0:disable cloud service 1:enable cloud service
+>cfg_cloud_enable:0
+#cloud service adress
+>cfg_wifi_cloud_host:www.baizhongyun.cn
+#cloud service port
+>cfg_cloud_port:10086
+
+#Dynamic access IP
+>cfg_ip_dhcp_flag:1
+
+#IP/mask/gateway
+>cfg_ip_address:192.168.3.100
+>cfg_ip_mask:255.255.255.0
+>cfg_ip_gate:192.168.3.1
+
+#--------------------------------------------------------------------------------
+
+############## Function Customization #######################################
+
+#user-defined function1 and 2.(display this button .  disable: 0; enable: 1)
+>cfg_function_btn1_display:1
+
+
+#command of user-defined function
+>function_btn1_cmd:M84;
+
+#black (0-0-0) M42 P4 S0;M42 P5 S0;M42 P6 S0;
+#white (1-1-1) M42 P4 S255;M42 P5 S255;M42 P6 S255;
+#green (1-0-0) M42 P4 S255;M42 P5 S0;M42 P6 S0;
+#red (0-1-0) M42 P4 S0;M42 P5 S255;M42 P6 S0;
+#blue (0-0-1) M42 P4 S0;M42 P5 S0;M42 P6 S255;
+#cyan (1-0-1) M42 P4 S255;M42 P5 S0;M42 P6 S255;
+#yellow	(1-1-0) M42 P4 S255;M42 P5 S255;M42 P6 S0;
+#magenta (0-1-1) M42 P4 S0;M42 P5 S255;M42 P6 S55;
+
+#set number of  "More" button
+>moreitem_pic_cnt:7
+#the files are named: bmp_custom1..7
+#edit command for 1~7 "More" button, each command must be separated by semicolon
+ 
+#########################################
+#Autotuning for nozzle+Bed + Auto-Save
+>moreitem_button1_cmd:M106 S255;G4 S1;M303 E0 S200 C8 U1;G4 S1;M303 E-1 S60 C8 U1;G4 S1;M500;G4 S1;M107;G4 S1;
+
+#Manuel Bed Level: Homing, All Motors but Z Off (Blue -> Green)
+>moreitem_button2_cmd:M42 P4 S0;M42 P5 S0;M42 P6 S255;G28;G1 Z0;M18 S600;M18 X Y E; M42 P4 S255;M42 P5 S0;M42 P6 S0;
+
+ LiveAdjustZ+ (-> green)
+>moreitem_button3_cmd:M290 Z0.025;M42 P4 S255;M42 P5 S0;M42 P6 S0;
+
+#SaveToEEPROM (red -> green)
+>moreitem_button4_cmd:M42 P4 S0;M42 P5 S255;M42 P6 S0;M500;G4 S1;M42 P4 S255;M42 P5 S0;M42 P6 S0;
+
+#PreHeat PLA (blue -> green)
+>moreitem_button5_cmd:M42 P4 S0;M42 P5 S0;M42 P6 S255;M104 S210; M140 S70; G4 P500;M42 P4 S255;M42 P5 S0;M42 P6 S0;
+
+#PreHeat PETG (blue -> green)
+>moreitem_button6_cmd:M42 P4 S0;M42 P5 S0;M42 P6 S255;M104 S240; M140 S85; G4 P500;M42 P4 S255;M42 P5 S0;M42 P6 S0;
+
+#LiveAdjustZ- (-> green)
+>moreitem_button7_cmd:M290 Z-0.025;M42 P4 S0;M42 P5 S0;M42 P6 S255;
+#########################################
+
+
+#how many "More" button display on screen interface
+>morefunc_cnt:5
+
+#RobRob: these buttons are available once a printjob is started
+#the files are named: bmp_morefunc1..6
+#command setting on button1~6
+#########################################
+#LightsOut
+>morefunc1_cmd:M42 P4 S0;M42 P5 S0;M42 P6 S0;
+#Lights On (White)
+>morefunc2_cmd:M42 P4 S255;M42 P5 S255;M42 P6 S255;
+#LiveAdjustZ+ (-> green)
+>morefunc3_cmd:M290 Z0.025;M42 P4 S255;M42 P5 S0;M42 P6 S0;
+#LiveAdjustZ- (-> green)
+>morefunc4_cmd:M290 Z-0.025;M42 P4 S0;M42 P5 S0;M42 P6 S255;
+#SaveToEEPROM (red -> green)
+>morefunc5_cmd:M42 P4 S0;M42 P5 S255;M42 P6 S0;M500;G4 S1;M42 P4 S255;M42 P5 S0;M42 P6 S0;
+#not used currently
+>morefunc6_cmd:G28;
+#########################################
+#---------------------------------------------------------------------------------
+##### Display Customization(button and logo customized see User's Manual) #######
+
+#the color of screen background
+>cfg_background_color:0x000000
+
+#the color of title text
+>cfg_title_color:0xFFFFFF
+
+#the color of temperature,fan,(etc) background
+>cfg_state_background_color:0x000000
+
+#the color of temprature,fan,(etc) text
+>cfg_state_text_color:0xFFFFFF
+
+#the color of file button
+>cfg_filename_background_color:0x000000
+
+#the color of file text
+>cfg_filename_color:0xFFFFFF
+
+#the color of background in printing
+>cfg_printingstat_word_background_color:0x000000
+
+#the color of text in printing status
+>cfg_printingstat_word_color:0xFFFFFF
+
+#3D effects setting (disable: 0; enable: 1)
+>cfg_BUTTON_3D_effects:0
+
+#The screen is flipped 180°(0: no flip, 1: flip)
+>cfg_OVERTURN_180:0
+
+#shield the function of detection power (0:no shield ,1:shield)
+>cfg_disable_PWR_det:0
+
+#shield the function of detection filament (0:no shield ,1:shield)
+>cfg_disable_MT_det:0
+
+#Whether to support the function of dual extruder single nozzle.(0: disable, 1: enable)
+#the extruder number need set to dual.
+>cfg_single_nozzle:0
+
+#For the M110 command plus check, the version of Marlin 1.0.2 and below is set to 1, and the other versions are set to 0.
+>cfg_M110_add_checkSum:0
+
+#Enable function of display error message. (no:0; Yes:1）
+>cfg_display_eeror_message:1
+
+#-----------------------------------------------------------------------
