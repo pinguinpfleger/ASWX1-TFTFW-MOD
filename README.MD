@@ -22,7 +22,7 @@ You need the [ASWX1-FW-MOD](https://github.com/pinguinpfleger/ASWX1-FW-MOD) or a
    Make sure you wait!   
    Default for nozzel is set to 220°C which is the middle of PLA and PETG default nozzel temperatures.  
    Default fur bed is set to 72°C which is the middle of PLA and PETG default bed temperatures.  
-   You can edit in [this line in mk_config.txt](/sd-card/mks_config.txt#L187)  
+   You can edit this in [this line in mk_config.txt](/sd-card/mks_config.txt#L187)  
   
 2. **Preheat Presets for PLA and PETG**  
    Let you easily preheat to given presets, you can change the temps in the mks_config.txt.  
