@@ -75,7 +75,8 @@ In case your USB Stick does not work anymore after the upgrade, check the follow
 That was always there but defaulted back to SD after TFT Upgrade.  
 
 ## Credits  
-The repository here is the continuation of the TFT-Firmware from [**Robscar's firmware mod** at Thingiverse](https://www.thingiverse.com/thing:3856144) and the remix from [FoodFighter](https://www.thingiverse.com/FoodFighter)
+The repository here is the continuation of the TFT-Firmware from [**Robscar's firmware mod** at Thingiverse](https://www.thingiverse.com/thing:3856144) and the remix from [FoodFighter](https://www.thingiverse.com/FoodFighter)  
+
 The modified Marlin firmware for the Artillery Sidewinder X1 has been seperated to an own repository:  
 https://github.com/pinguinpfleger/ASWX1-FW-MOD
 
