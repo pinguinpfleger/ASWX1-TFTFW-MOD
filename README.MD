@@ -4,7 +4,7 @@ The Artillery Sidewinder X1 has an Makerbase MKS-TFT 3.2 Touch-Display build in 
 The Firmware for the MKS-TFT touch display is only available as precompiled firmware [link](https://github.com/makerbase-mks/MKS-TFT/tree/master/MKS-TFT2.8-3.2 ) so adjustments / extensions are limited ...  
 
 ## Requirements  
-You need the [ASWX1-FW-MOD](https://github.com/pinguinpfleger/ASWX1-FW-MOD) or at least a firmware with the enabled feature that are used with the ASWX1-TFTFW-MOD.  
+You need the [ASWX1-FW-MOD](https://github.com/pinguinpfleger/ASWX1-FW-MOD) or at least a firmware with enabled eeprom and babystepping.  
 
 ## RELEASES
 
