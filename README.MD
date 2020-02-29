@@ -20,26 +20,27 @@ You need the [ASWX1-FW-MOD](https://github.com/pinguinpfleger/ASWX1-FW-MOD) or a
    During the tuning process the LED will stay Red.  
    Once the process is finished, the LED will turn Green.   
    Make sure you wait!   
-   Your machine specific PID values are now in use.  
-   However, if you want to persist your PID settings you must execute “Store to EEPROM”  
+   Default for nozzel is set to 220°C which is the middle of PLA and PETG default nozzel temperatures.  
+   Default fur bed is set to 72°C which is the middle of PLA and PETG default bed temperatures.  
+   You can edit in [this line in mk_config.txt](/sd-card/mks_config.txt#L187)  
   
 2. **Preheat Presets for PLA and PETG**  
-   Let you easily preheat to given presets, you can change the temps in the [mks_config.txt](/sd-card/mks_config.txt).  
-  
+   Let you easily preheat to given presets, you can change the temps in the mks_config.txt.
+   Default for [PLA](/sd-card/mks_config.txt#L199) is 205°C Nozzle and 60°C Bed `M104 S205; M140 S60;`
+   Default for [PETG](/sd-card/mks_config.txt#L202) is 235°C Nozzle and 85°C Bed `M104 S235; M140 S85;`
+
 3. **Manual Bed Leveling**  
    Manual Bed Leveling Homes(G28) and turns off all stepper motors except Z-Motors.  
    Now you can freely move your hotend to the desired positions.  
    I find this helpful for initial bed leveling as you can carefully move your printhead.  
    Do not forget to preheat bed and hotend for accurate leveling.  
    You can use Z+ Z- commands to drive the head up or down overall.  
-   However, you need to execute StoreToEEPROM to persist Z Values.  
      
 4. **Live Adjust Z / Babystepping Z**  
    During printing the first layer you can still adjust the distance between the nozzle and the print-bed.   
    E.g. if you find  your print is not sticking you can carefully step down the nozzle or correct it up again   
    without the need to relevel all four screws at the same time.  
    However, this assumes the bed is in level overall but maybe just a little too low or too high overall.  
-   You need to execute StoreToEEPROM to persist Z Values.  
    
 
 ## SCREENSHOTS  
