@@ -47,23 +47,26 @@ Changed some Icons with FoodFighters Version
 
 ## SCREENSHOTS  
 
-### TOOLS
-<img src="/README.MD_files/boot.jpg" align="left" width="45%"/>
-<img src="/README.MD_files/start.jpg" width="45%"/>
-<img src="/README.MD_files/tools.jpg" align="left" width="45%"/>
-<img src="/README.MD_files/more.jpg" width="45%"/>  
-<img src="/README.MD_files/move.jpg" align="left" width="45%"/>
-<img src="/README.MD_files/leveling.jpg"  width="45%"/>  
-<img src="/README.MD_files/filament.jpg" align="left" width="45%"/>  
-<img src="/README.MD_files/extrude.jpg" width="45%"/>  
-<img src="/README.MD_files/heat.jpg" width="45%"/>  
+### Boot & Startscreen
+<img src="/README.MD_files/1_boot.jpg" align="left" width="45%"/>
+<img src="/README.MD_files/2_start.jpg" width="45%"/>  
+
+### Tools  
+<img src="/README.MD_files/3_tools.jpg" align="left" width="45%"/>
+<img src="/README.MD_files/4_tool_heat.jpg" width="45%"/>  
+<img src="/README.MD_files/5_tool_extrusion.jpg" align="left" width="45%"/>
+<img src="/README.MD_files/6_tool_move.jpg" width="45%"/>  
+<img src="/README.MD_files/7_tool_home.jpg" align="left" width="45%"/>
+<img src="/README.MD_files/8_tool_leveling.jpg" width="45%"/>  
+<img src="/README.MD_files/9_tool_change.jpg" align="left" width="45%"/>
+<img src="/README.MD_files/10_tool_more.jpg" width="45%"/>  
 
 ### Settings  
-<img src="/README.MD_files/settings_1.jpg" align="left" width="45%"/>
-<img src="/README.MD_files/settings_filesys.jpg" width="45%"/>
-<img src="/README.MD_files/settings_about.jpg" align="left" width="45%"/>
-<img src="/README.MD_files/settings_wifi.jpg" width="45%"/>  
-
+<img src="/README.MD_files/11_settings.jpg" align="left" width="45%"/>
+<img src="/README.MD_files/12_settings_files.jpg" width="45%"/>  
+<img src="/README.MD_files/13_settings_wii.jpg" align="left" width="45%"/>
+<img src="/README.MD_files/14_settings_fan.jpg" width="45%"/>   
+<img src="/README.MD_files/15_settings_about.jpg" width="45%"/>   
 
 ## Individual Adjustments  
 Adjustments can be made via the [mks_config.txt](/sd-card/mks_config.txt).  
