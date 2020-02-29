@@ -8,7 +8,7 @@ You need the [ASWX1-FW-MOD](https://github.com/pinguinpfleger/ASWX1-FW-MOD) or a
 
 ## RELEASES
 
-##.02.2020 ASWX1-TFTFW-MOD-v1.0 based on MKS TFT28_32_v3.0.3
+29.02.2020 [ASWX1-TFTFW-MOD-v1.0](https://github.com/pinguinpfleger/ASWX1-TFTFW-MOD/releases/tag/ASWX1-TFTFW-MOD-v1.0) - [ASWX1-TFTFW-MOD-v1.0.zip](https://github.com/pinguinpfleger/ASWX1-TFTFW-MOD/releases/download/ASWX1-TFTFW-MOD-v1.0/ASWX1-TFTFW-MOD-v1.0.zip) based on MKS TFT28_32_v3.0.3
 
 
 ## Added Features  
