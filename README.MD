@@ -25,9 +25,9 @@ You need the [ASWX1-FW-MOD](https://github.com/pinguinpfleger/ASWX1-FW-MOD) or a
    You can edit in [this line in mk_config.txt](/sd-card/mks_config.txt#L187)  
   
 2. **Preheat Presets for PLA and PETG**  
-   Let you easily preheat to given presets, you can change the temps in the mks_config.txt.
-   Default for [PLA](/sd-card/mks_config.txt#L199) is 205°C Nozzle and 60°C Bed `M104 S205; M140 S60;`
-   Default for [PETG](/sd-card/mks_config.txt#L202) is 235°C Nozzle and 85°C Bed `M104 S235; M140 S85;`
+   Let you easily preheat to given presets, you can change the temps in the mks_config.txt.  
+   Default for [PLA](/sd-card/mks_config.txt#L199) is 205°C Nozzle and 60°C Bed `M104 S205; M140 S60;`  
+   Default for [PETG](/sd-card/mks_config.txt#L202) is 235°C Nozzle and 85°C Bed `M104 S235; M140 S85;`  
 
 3. **Manual Bed Leveling**  
    Manual Bed Leveling Homes(G28) and turns off all stepper motors except Z-Motors.  
