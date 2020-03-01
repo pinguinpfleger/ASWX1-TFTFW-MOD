@@ -1,7 +1,7 @@
 # Optimized firmware for the Artillery Sidewinder X1 touch display  
   
-The Artillery Sidewinder X1 has an Makerbase MKS-TFT 3.2 Touch-Display build in and is delivered with this Firmware [link](http://www.artillery3d.com/DownLoad/15689.html)   
-The Firmware for the MKS-TFT touch display is only available as precompiled firmware [link](https://github.com/makerbase-mks/MKS-TFT/tree/master/MKS-TFT2.8-3.2 ) so adjustments / extensions are limited ...  
+The Artillery Sidewinder X1 has an Makerbase MKS-TFT 3.2 Touch-Display build in and is delivered with [this Firmware](http://www.artillery3d.com/DownLoad/15689.html)   
+The Firmware for the MKS-TFT touch display is only available as [precompiled firmware](https://github.com/makerbase-mks/MKS-TFT/tree/master/MKS-TFT2.8-3.2 ) so adjustments / extensions are limited ...  
 
 ## Requirements  
 You need the [ASWX1-FW-MOD](https://github.com/pinguinpfleger/ASWX1-FW-MOD) or at least a firmware with enabled eeprom and babystepping.  
@@ -18,9 +18,7 @@ Changed some Icons with FoodFighters Version
 1. **P.I.D. Autotune**   
    PID Tuning improves your hotend/bed temperatur stability and will positively impact print quality.     
    This command initiates a process of heating and cooling to determine the proper PID values for your hotend.  
-   This may take up to 5 minutes.  
-   During the tuning process the LED will stay Red.  
-   Once the process is finished, the LED will turn Green.   
+   This may take up to 5-10 minutes.    
    Make sure you wait!   
    Default for nozzel is set to 220°C which is the middle of PLA and PETG default nozzel temperatures.  
    Default fur bed is set to 72°C which is the middle of PLA and PETG default bed temperatures.  
@@ -36,7 +34,7 @@ Changed some Icons with FoodFighters Version
    Now you can freely move your hotend to the desired positions.  
    I find this helpful for initial bed leveling as you can carefully move your printhead.  
    Do not forget to preheat bed and hotend for accurate leveling.  
-   You can use Z+ Z- commands to drive the head up or down overall.  
+   You can use Z+ and Z- commands to drive the head up or down overall.  
      
 4. **Live Adjust Z / Babystepping Z**  
    During printing the first layer you can still adjust the distance between the nozzle and the print-bed.   
@@ -76,8 +74,9 @@ Simply copy all files in the [sd-card folder](/sd-card/) to a microSD-Card, inse
 
 
 ## TIPPS  
-In case your USB Stick does not work anymore after the upgrade, check the following option on your TFT: SET/File/USB.  
-That was always there but defaulted back to SD after TFT Upgrade.  
+- In case your USB Stick does not work anymore after the upgrade, check the following option on your TFT: SET/File/USB.  
+That was always there but defaulted back to SD after TFT Upgrade.
+- You can simply upload the modified mks_config.txt to the tft, just copy this file to sd and reboot. You do not need to copy all the other files, its a lot faster.
 
 ## Credits  
 The repository here is the continuation of the TFT-Firmware from [**Robscar's firmware mod** at Thingiverse](https://www.thingiverse.com/thing:3856144) and the remix from [FoodFighter](https://www.thingiverse.com/FoodFighter)  
