@@ -5,7 +5,7 @@
 # modified: Dec/2019
 # remixed by: FoodFighter (https://www.thingiverse.com/FoodFighter)
 # remixed: Feb/2020
-# coninued: https://github.com/pinguinpfleger/ASWX1-TFTFW-MOD
+# continued: https://github.com/pinguinpfleger/ASWX1-TFTFW-MOD
 # --------------------- Disclaimer -------------------------------
 # Use at your own risk!
 # There are inherent dangers of upgrading your firmware and config files. We caution you to make sure that you completely understand the potential risks before applying/uploading any of the software to your 3d-Printer

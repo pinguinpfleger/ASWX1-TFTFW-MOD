@@ -8,10 +8,10 @@ You need the [ASWX1-FW-MOD](https://github.com/pinguinpfleger/ASWX1-FW-MOD) or a
 
 ## RELEASES
 
-29.02.2020 [ASWX1-TFTFW-MOD-v1.1](https://github.com/pinguinpfleger/ASWX1-TFTFW-MOD/releases/tag/ASWX1-TFTFW-MOD-v1.1) - [ASWX1-TFTFW-MOD-v1.1.zip](https://github.com/pinguinpfleger/ASWX1-TFTFW-MOD/releases/download/ASWX1-TFTFW-MOD-v1.1/ASWX1-TFTFW-MOD-v1.1.zip) based on MKS TFT28_32_v3.0.3  
-Changed some Icons with FoodFighters Version  
+**29.02.2020** [ASWX1-TFTFW-MOD-v1.1](https://github.com/pinguinpfleger/ASWX1-TFTFW-MOD/releases/tag/ASWX1-TFTFW-MOD-v1.1) - [ASWX1-TFTFW-MOD-v1.1.zip](https://github.com/pinguinpfleger/ASWX1-TFTFW-MOD/releases/download/ASWX1-TFTFW-MOD-v1.1/ASWX1-TFTFW-MOD-v1.1.zip) based on MKS TFT28_32_v3.0.3  
+*Changed some Icons with FoodFighters Version*  
            
-29.02.2020 [ASWX1-TFTFW-MOD-v1.0](https://github.com/pinguinpfleger/ASWX1-TFTFW-MOD/releases/tag/ASWX1-TFTFW-MOD-v1.0) - [ASWX1-TFTFW-MOD-v1.0.zip](https://github.com/pinguinpfleger/ASWX1-TFTFW-MOD/releases/download/ASWX1-TFTFW-MOD-v1.0/ASWX1-TFTFW-MOD-v1.0.zip) based on MKS TFT28_32_v3.0.3  
+**29.02.2020** [ASWX1-TFTFW-MOD-v1.0](https://github.com/pinguinpfleger/ASWX1-TFTFW-MOD/releases/tag/ASWX1-TFTFW-MOD-v1.0) - [ASWX1-TFTFW-MOD-v1.0.zip](https://github.com/pinguinpfleger/ASWX1-TFTFW-MOD/releases/download/ASWX1-TFTFW-MOD-v1.0/ASWX1-TFTFW-MOD-v1.0.zip) based on MKS TFT28_32_v3.0.3  
   
 ## Added Features  
   
@@ -22,7 +22,7 @@ Changed some Icons with FoodFighters Version
    Make sure you wait!   
    Default for nozzel is set to 220°C which is the middle of PLA and PETG default nozzel temperatures.  
    Default fur bed is set to 72°C which is the middle of PLA and PETG default bed temperatures.  
-   You can edit this in [this line in mk_config.txt](/sd-card/mks_config.txt#L187)  
+   You can edit this in [this line in mk_config.txt](/sd-card/mks_config.txt#L187).  
   
 2. **Preheat Presets for PLA and PETG**  
    Let you easily preheat to given presets, you can change the temps in the mks_config.txt.  
@@ -79,7 +79,7 @@ That was always there but defaulted back to SD after TFT Upgrade.
 - You can simply upload the modified mks_config.txt to the tft, just copy this file to sd and reboot. You do not need to copy all the other files, its a lot faster.
 
 ## Credits  
-The repository here is the continuation of the TFT-Firmware from [**Robscar's firmware mod** at Thingiverse](https://www.thingiverse.com/thing:3856144) and the remix from [FoodFighter](https://www.thingiverse.com/FoodFighter)  
+The repository here is the continuation of the TFT-Firmware from [**Robscar's firmware mod** at Thingiverse](https://www.thingiverse.com/thing:3856144) and the remix from [FoodFighter](https://www.thingiverse.com/FoodFighter).  
 
 The modified Marlin firmware for the Artillery Sidewinder X1 has been seperated to an own repository:  
 https://github.com/pinguinpfleger/ASWX1-FW-MOD
